@@ -40,5 +40,5 @@ java {
 }
 
 tasks.test {
-    jvmArgs("-Djava.security.properties==${project.projectDir}/java.security", "-Dorg.bouncycastle.fips.approved_only=true")
+    jvmArgs("-Djava.security.properties==${project.projectDir}/java.security")
 }

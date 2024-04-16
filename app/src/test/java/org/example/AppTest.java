@@ -39,9 +39,9 @@ class AppTest {
 
         try {
             keyGenerator.init(256);
+            // NOTE: With parent first related properties provided, we cannot init successfully.
             fail("HMAC SHA-512 initialization should not work when FIPS enabled.");
-        } catch (AssertionError ex) {
-            // NOTE: Now we can catch the exception
+        } catch (FipsUnapprovedOperationError ex) {
             // Should throw this exception.
             System.out.println(123);
         } catch (Exception exception) {
