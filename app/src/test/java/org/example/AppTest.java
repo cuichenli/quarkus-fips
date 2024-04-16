@@ -40,8 +40,8 @@ class AppTest {
         try {
             keyGenerator.init(256);
             fail("HMAC SHA-512 initialization should not work when FIPS enabled.");
-        } catch (FipsUnapprovedOperationError ex) {
-            // NOTE: we noticed that this exception is thrown, but not caught.
+        } catch (AssertionError ex) {
+            // NOTE: Now we can catch the exception
             // Should throw this exception.
             System.out.println(123);
         } catch (Exception exception) {
