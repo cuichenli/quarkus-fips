@@ -1,0 +1,1 @@
+Discussion of this repo can be found at: https://github.com/quarkusio/quarkus/discussions/40095
