@@ -26,6 +26,7 @@ dependencies {
     // FIPS Compliance
     implementation("org.bouncycastle:bctls-fips:1.0.18")
     implementation("org.bouncycastle:bc-fips:1.0.2.4")
+    implementation("io.quarkus:quarkus-security")
 
 
     testImplementation("io.quarkus:quarkus-junit5")
