@@ -26,7 +26,8 @@ dependencies {
     // FIPS Compliance
     implementation("org.bouncycastle:bctls-fips:1.0.18")
     implementation("org.bouncycastle:bc-fips:1.0.2.4")
-
+    implementation("io.quarkus:quarkus-security")
+    implementation("io.quarkus:quarkus-kubernetes-client")
 
     testImplementation("io.quarkus:quarkus-junit5")
 }
@@ -40,5 +41,4 @@ java {
 }
 
 tasks.test {
-    jvmArgs("-Djava.security.properties==${project.projectDir}/java.security")
 }
